@@ -2,11 +2,15 @@ body {
     position: relative;
     padding: 0px;
     margin: 0px;
+    background-color: #FFF3E0;
 }
+
+/* Section 1 */
 
 .header {
     height: 25vh;
     overflow: hidden;
+    margin: 0px;
     background-color: #180202;
 
 }
@@ -31,7 +35,7 @@ body {
     border-radius: 10px;
     border: none;
     background-color: #E3735E;
-    box-shadow: 0px 4px 5px #000000;
+    box-shadow: 0px 4px 5px #0000007d;
 }
 
 .more_horiz {
@@ -43,7 +47,47 @@ body {
     color: #E3735E;
     font-size: 3.5em;
     text-align: end;
-    text-justify: end;
+    right: 0px;
     margin: 20px;
     z-index: 2;
+}
+
+/* Section 2 */
+
+.booking-prompt {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bp-para {
+    text-align: start;
+    align-self: start;
+    text-justify: inter-ideograph;
+    font-size: 1.3em;
+    margin: 0px;
+    color: #7D3F34;
+    z-index: 2;
+    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 90px;
+    background-color: #e3725e7d;
+}
+
+.bookNow-btn {
+     width: 7em;
+     height: 3em;
+     border: none;
+     border-radius: 10px;
+     background-color: #CD992E;
+     color: #fff;
+     margin: 20px;
+     font-weight: bold;
+     font-size: 1em;
+     align-self: end;
+     position: absolute;
+     box-shadow: 0px 4px 10px #0000007d;
+     z-index: 2;
 }
