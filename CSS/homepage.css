@@ -5,9 +5,9 @@ body {
 }
 
 .header {
-    position: absolute;
     height: 25vh;
     overflow: hidden;
+    background-color: #180202;
 
 }
 
@@ -17,6 +17,7 @@ body {
     object-fit: cover;
     object-position: top;
     display: block;
+    opacity: 50%;
 }
 
 .nav-btn {
@@ -30,7 +31,7 @@ body {
     border-radius: 10px;
     border: none;
     background-color: #E3735E;
-    box-shadow: 0px 4px 5px #00000092;
+    box-shadow: 0px 4px 5px #000000;
 }
 
 .more_horiz {
@@ -39,7 +40,10 @@ body {
 
 .logo {
     position: absolute;
-    color: blue;
-    font-size: 500px;
+    color: #E3735E;
+    font-size: 3.5em;
+    text-align: end;
+    text-justify: end;
+    margin: 20px;
     z-index: 2;
 }
