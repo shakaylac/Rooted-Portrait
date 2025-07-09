@@ -49,6 +49,7 @@ body {
     text-align: end;
     right: 0px;
     margin: 20px;
+    margin-bottom: -20px;
     z-index: 2;
 }
 
@@ -78,7 +79,7 @@ body {
 
 .bookNow-btn {
      width: 7em;
-     height: 3em;
+     height: 2em;
      border: none;
      border-radius: 10px;
      background-color: #CD992E;
@@ -90,4 +91,56 @@ body {
      position: absolute;
      box-shadow: 0px 4px 10px #0000007d;
      z-index: 2;
+}
+
+/* Section 3 */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, .2fr);
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px;
+}
+
+.offset-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px; /* step effect...I literally deleted this and the effect still worked so I don't know how that's happening. */
+    gap: 10px;
+    margin: 0px;
+}
+
+.square {
+    background-color: #E3735E;
+    width: 8em;
+    height: 8em;
+    margin: 10px;
+    margin-top: -2px;
+}
+
+.photo {
+    background-color: #D9D9D9;
+    width: 8em;
+    height: 12em;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+/* Section 4 */
+
+.second-text {
+    padding: 50px;
+
+}
+
+.second-text > .text {
+    color: #7D3F34;
+    font-size: 1.5em;
 }
