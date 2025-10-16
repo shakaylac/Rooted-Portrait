@@ -42,6 +42,12 @@ body {
     box-shadow: 0px 4px 5px #0000007d;
 }
 
+.nav-btn:hover {
+    cursor: pointer;
+    background-color: #9c3e2e;
+    transition: background-color 0.3s ease;
+}
+
 .more_horiz {
     width: 90px;
 }
@@ -252,9 +258,6 @@ body {
 
 
 @media (min-width: 400px) {
-    .column, .offset-column {
-        width: 25rem; /* Further increase column width on even larger screens */
-    }
     .header {
         height: 15vh;
     }
@@ -302,9 +305,23 @@ body {
     
 }
 
+@media (min-width: 960px) {
+    .column, .offset-column {
+        width: 25rem; /* Further increase column width on even larger screens */
+    }
+     .nav-btn, .more_horiz{
+        display: none; /* Hide nav button on larger screens */
+     }
+    
+}
+
 @media (min-width: 1080px) {
     .column, .offset-column {
         width: 30rem; /* Further increase column width on even larger screens */
+    }
+    .nav-btn, .more_horiz{
+        display: none; /* Hide nav button on larger screens */
+        
     }
     
 }
