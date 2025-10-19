@@ -55,10 +55,14 @@ body {
 
 .nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     position: absolute;
     z-index: 2;
+    position: absolute;
+    padding: 10px;
+    left: 70%;
+    transform: translateX(-50%);
     margin-top: 50px;
 }
 
@@ -68,6 +72,12 @@ a {
     margin: 0 15px;
     font-size: 1.2em;
     font-weight: bold;
+    font-weight: 200;
+}
+
+a:hover {
+    color: #E3735E;
+    transition: color 0.3s ease;
 }
 
 .logo {
@@ -288,11 +298,12 @@ a {
         padding: 20px;
     }
     .booking-prompt {
-        height: 12vh;
+        height: 18vh;
     }
-      .nav {
-        display: none; /* Hide nav by default */
+    .nav {
+        display: none; /* Hide nav on smaller screens */
     }
+    
     
 }
 
@@ -307,10 +318,11 @@ a {
     .header-img {
         height: 30vh;
     }
-
-      .nav {
-        display: none; /* Hide nav by default */
+    .nav {
+        display: none; /* Hide nav on smaller screens */
     }
+
+    
     
 }
 
@@ -328,8 +340,9 @@ a {
         height: 20vh;
     }
     .nav {
-        display: none; /* Hide nav by default */
+        display: flex; /* Show nav on larger screens */
     }
+   
     
 }
 
@@ -340,6 +353,9 @@ a {
      .nav-btn, .more_horiz{
         display: none; /* Hide nav button on larger screens */
      }
+    .nav {
+        display: flex; /* Show nav on larger screens */
+    }
 
 
 }
@@ -351,6 +367,10 @@ a {
     .nav-btn, .more_horiz{
         display: none; /* Hide nav button on larger screens */
         
+    }
+
+    .nav {
+        display: flex; /* Show nav on larger screens */
     }
     
 }
