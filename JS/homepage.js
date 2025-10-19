@@ -32,6 +32,9 @@ links.forEach(a => {
     a.addEventListener('mouseover', () => {
         a.style.backgroundColor = '#f0f0f0';
     });
+    a.addEventListener('mouseout', () => {
+        a.style.backgroundColor = 'transparent';
+    });
 });
 
 document.body.appendChild(dropdown);
