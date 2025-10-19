@@ -30,10 +30,20 @@ links.forEach(a => {
     a.style.fontSize = '18px';
     a.style.hoverBackgroundColor = '#f0f0f0';
     a.addEventListener('mouseover', () => {
+        a.style.color = '#E3735E';
+        a.style.transition = 'color 0.3s ease';
+    });
+    a.addEventListener('mouseout', () => {
+        a.style.color = '#333333';
+        a.style.transition = 'color 0.3s ease';
+    });
+    a.addEventListener('mouseover', () => {
         a.style.backgroundColor = '#f0f0f0';
+        a.style.transition = 'background-color 0.3s ease';
     });
     a.addEventListener('mouseout', () => {
         a.style.backgroundColor = 'transparent';
+        a.style.transition = 'background-color 0.3s ease';
     });
 });
 
