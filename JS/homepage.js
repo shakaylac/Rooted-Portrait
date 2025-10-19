@@ -13,6 +13,7 @@ dropdown.style.right = '0px';
 dropdown.style.zIndex = '5';
 dropdown.style.textAlign = 'left';
 dropdown.style.borderBottomLeftRadius = '8px';
+dropdown.style.setProperty('display', 'none', 'important');
 dropdown.innerHTML = `
     <a href="#">Home</a>
     <a href="#">Gallery</a>

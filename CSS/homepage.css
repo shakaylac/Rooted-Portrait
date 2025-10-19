@@ -315,11 +315,6 @@ a:hover {
         display: none; /* Hide nav on smaller screens */
     }
     
-    .dropdown {
-        width: 80%;
-        height: 40vh;
-        display: none;
-    }
     
 }
 
@@ -416,5 +411,27 @@ a:hover {
         width: 50%;
         height: 50vh;
         display: none;
+    }
+}
+
+/*
+ Ensure the dropdown never appears on screens larger than 768px.
+ Keep it hidden by default and only allow it to be shown on small screens
+ (<= 768px). The !important guards against inline styles set by JS.
+*/
+@media (min-width: 769px) {
+    .dropdown {
+        display: none !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* On small screens the dropdown can be shown (JS can toggle it). */
+    .dropdown {
+        display: block !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
     }
 }
